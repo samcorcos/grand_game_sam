@@ -1,0 +1,16 @@
+
+
+
+• Create a JSON file with all the unit combat strengths/costs
+
+• Create combat calculator for "win/loss"
+
+• Create combat calculator for "casualties" 
+
+• Create pre-function for "combat value" for all armies involved
+
+• Create pre-functionf for "casualty combat value" for all armies, which will just be half of the "combat value"
+
+• Add battle cards
+
+• 
