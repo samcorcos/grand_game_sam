@@ -26,8 +26,6 @@ var army2;		// total value of army 2 strength
 var army1List = [];		// list of army 1 troops
 var army2List = []; 	// list of army 2 troops
 
-var unitType = unitValue.supplied.infantry.defense
-
 
 
 // This is how it happens:

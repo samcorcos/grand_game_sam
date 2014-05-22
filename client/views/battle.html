@@ -2,21 +2,27 @@
     <div class="container" style="text-align:center; padding-top:1em;">
         <h1>Battle</h1>      
     </div>
-
-    <div class="row">
-        <div class="col-md-3">
-            <div class="middle">
-            	<h2>Army 1</h2>
-            	<table class="middle">
-            		{{#each unitType}}
-            		<tr class="table-row">
-            			<td class="table-col">{{this}}</td>
-            			<td class="table-col"><input type="number" class="supplied army 1 {{this}}" name="{{this}}" min="0" value="0"></td>
-            		</tr>
-            		{{/each}}
-            	</table>
-            </div>
-        </div>
+    <div class="container">
+        {{>insertUnits}}
     </div>
 </template>
 
+<template name="insertUnits">
+  {{> quickForm collection="Units" id="insertUnits" type="insert"}}
+</template>
+
+
+<!--     <div class="row">
+        <div class="col-md-3">
+            <div class="middle">
+                <h2>Army 1</h2>
+                <table class="middle">
+                    {{#each unitType}}
+                    <tr class="table-row">
+                        <td class="table-col">{{this}}</td>
+                        <td class="table-col"><input type="number" class="supplied army 1 {{this}}" name="{{this}}" min="0" value="0"></td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+        </div> -->

@@ -11,3 +11,6 @@ iron-router
 accounts-ui-bootstrap-dropdown
 accounts-password
 spin
+simple-schema
+autoform
+collection2
