@@ -1,5 +1,230 @@
 <template name="rules">
-	<div class="container" style="text-align:center; padding-top:1em;">
-		<h1>The Rule Book</h1>		
+
+
+	<div class="main" id="main">
+		<div class="top-page">
+			<p class="text-right">
+				Last updated: 22 May 2015
+			</p>
+			<div class="pad-top-bottom">
+				<h2 class="center">
+					The Grand Game:
+				</h2>
+				<h3 class="center">
+					Politics, Development, and War
+				</h3>
+			</div>
+			<div class="pad-top-bottom">
+				<h5 class="center">
+					J. Andrew Sinclair
+				</h5>
+				<h5 class="center">
+					and
+				</h5>
+				<h5 class="center">
+					The Society of St. William
+				</h5>
+			</div>
+			<div class="pad-top-bottom">
+				<blockquote class="center">
+				The first thing you need in matters of this kind, as every general knows, is a thorough knowledge of the terrain.  Not know the terrain, and where are you?  Look at Napoleon and that sunken road at Waterloo.  Silly ass!
+				<footer class="">
+					– Bertie Wooster, <em>Very good, Jeeves</em>
+				</footer>
+			</blockquote>
+			</div>
+		</div>
+		<div class="introduction">
+			<h3 class="pad-top">
+				Introduction
+			</h3>
+			<p>
+				There are a number of fundamental differences between this version of <em>The Grand Game</em> and the previous versions. I highlighted changes in the rules whenever possible. Generally speaking, these changes are:
+			</p>
+			<ol>
+				<li>Casualties are significantly fewer than in previous versions.</li>
+				<li>Equivalent forces should not lose more than half of their units in a single conflict—most conflicts will be multi-iterative.</li>
+				<li>Military purchasing trade-offs, such as "tank or infantry", are now more of a strategic trade-off between offense and defense.</li>
+				<li>Air superiority is a force multiplier of +1 and <em>does not stack</em>; superiority of 5 planes is still only +1.</li>
+				<li>Air units/superiority is very helpful for large armies and only marginally useful for small armies.</li>
+				<li>Sea units are significantly cheaper and now have a similar trade-off as infantry v. tank acquisition.</li>
+				<li>Battle cards have been introduced: battle cards are drawn for every battle affect the outcome of every battle. No battle card should affect the outcome by more than 25%.</li>
+				<li>Victory in battle and casualties inflicted are two separate calculations. Much like the game Diplomacy, it is possible to win a battle with no casualties inflicted on either side.</li>
+				<li>Every player now has a different set of victory conditions, which are kept secret from everyone else at the table.</li>
+				<li>Ships are still extremely vulnerable to air attack; air superiority over the seas will be important.</li>
+				<li>Francs can now buy infantry and supply at double cost—infantry cost 10 Francs, supply cost 2 Francs. Purchases with Francs can be made at the end of any season, after combat reconciliation (not the yearly political reconciliation), and must be placed in cities.</li>
+				<li>Railroads are now constructable and destroyable. Building supply lines to and from the front will be an important factor in this version of the game.</li>
+				<li>Tanks no longer receive defensive bonuses.</li>
+				<li>Because Francs are more valuable than in previous versions, the political down-side for 0% and 10% political spending have been softened.</li>
+				<li>The economic development chart has been adjusted to allow for more domestic GDP growth.</li>
+				<li>The League of Nations has been significantly altered to allow for other nations to "chip in" for the defense of Neutral countries using Francs. This change makes conquering of Neutrals against the wishes of others much more difficult.</li>
+				<li>The Vickrey auction system has been altered because of its tendency to work to the disadvantage of new players. We will now use a standard auction with $5 minimum increments.</li>
+				<li>Enemy units cannot "pass through" each other. If two sets of units are attacking each other's space, both sets of units will fight at "attack" strength.</li>
+				<li>Although it will increase the tendency towards "poking" large armies with individual units to drain supply, 1 supply will be drained for every unit in a stack of units unless otherwise specified (i.e. one can order "only # infantry will use supply if attacked"). This versino of the game is intended to put more emphasis on supply lines.</li>
+				<li>Territory and unit transfers are now more expensive: 1 Franc per territory or unit, rather than 1 Franc per 5 territories. Supply costs nothing to transfer.</li>
+				<li>Troop and territory transfers may now be performed once per <em>season</em> after combat reconciliation, rather than once per turn.</li>
+			</ol>
+			<p>
+				The reason for these changes is to see how the game plays out with fewer casualties and to see how players react when each player has a different set of objectives; it should be especially interesting to see how allies act towards each other when they have different victory conditions. 
+			</p>
+			<p>
+				Francs are also made significantly more useful in order to encourage players to acquire them, trade them, and use them to form alliances and support each other (including Neutrals).
+			</p>
+			<p>
+				I anticipate larger armies, more GDP development, and significantly more activity involving Francs. Given teh decreased number of casualties and the multi-iterative nature of wars in this version of the game, I expect supply lines to be a bigger issue than in previous versions.
+			</p>
+			<p>
+				The addition of <strong>combat cards</strong> will slightly change the outcome of every battle, though it should never change the odds more than 25% in either direction; most will change the odds less than 10%.
+			</p>
+			<p>
+				<strong>TODO: Alternate victory conditions, fix politics cards, add battle cards and add description of battle cards to the rules</strong>
+			</p>
+		</div>
+		<div class="rules">
+			<h3 class="pad-top">
+				The Board
+			</h3>
+			<p>
+				The game board contains several different types of boundaries and two terrain types: land and sea territories. 
+			</p>
+			<p>
+				Additionally, there are some modifiers that apply to certain territories that give them special properties: cities, ports, railroads, mountains, rivers, shoreline, and canals.
+			</p>
+			<p>
+				Sea territories are relatively large compared to land territories and also have slightly different properties as well
+			</p>
+			<p>
+				These are the bountary types:
+				<ul>
+					<li><strong>Economic Zones</strong>: these are collections of land (plain and mountain) territories; economic development takes place at the zone level rather than at the territory leve.</li>
+					<li><strong>National Borders</strong>: these define the areas possessed by each nation at the beginning of the game and may cut across economic zones.</li>
+				</ul>
+			</p>
+			<p>The game board will be divided up into some number of countries depending on the number of players in the game. Generally, there will be at least two more countries than players in the game.</p>
+			<p>
+				Half of the countries in the game will be "large" countries that contain on the order of 12-18 land territories. The other half will be "small" countries that contain fewer territories.
+			</p>
+			<p>
+				Not all countries must be claimed for the game to operate; there are extensive provisions in the rules for neutral countries.
+			</p>
+			<h4>
+				Economic Zones
+			</h4>
+			<p>
+				While the exact details will vary by country and by map, generally each economic zone will contain 4-6 land territories.
+			</p>
+			<p>
+				Players either have <strong>full</strong>, <strong>partial</strong>, or <strong>no</strong> control over an economic zone.
+			</p>
+			<p>
+				To have full control, a player must possess <em>all</em> of the land territories in that zone.
+			</p>
+			<p>
+				To have partial control, a player must possess at least 51% of teh land territories in that zone.
+			</p>
+			<p>
+				Not all zones will necessarily be controlled by a player at all times; furthermore, players typically will begin with partial control over some zones rather than full control.
+			</p>
+			<p>
+				Although sea territories will be included in economic zones, they do not contribute to economic zones and have no role in determining which player controls an economic zone.
+			</p>
+			<h4>
+				Air Zones
+			</h4>
+			<p>
+				Air zones are the same as economic zones, and may include both sea and land territories. 
+			</p>
+			<p>
+				Air zones represent areas in which the player may contend for air control. The player with air supremacy may then apply a modifier to <em>every</em> unit in <em>every</em> (land and sea) territory in that air zone.
+			</p>
+			<h4>
+				Terrain Modifiers
+			</h4>
+			<p>
+				Below is a list of terrain modifiers.
+			</p>
+			<ul>
+				<li><strong>Cities</strong>: These are your production centers; they produce land units, air units, and supply. Additionally, territories with cities receive a defensive bonus (for a list of combat bonuses, see the combat section).</li>
+				<li><strong>Ports</strong>: Ports are cities located on the shoreline. Ports allow you to build ships. They receive the same defensive bonus as a city.</li>
+				<li><strong>Railroads</strong>: Railroads allow you to move units more quickly around the map. Railroads can be both built and destroyed. Railroads are owned by the player owning the land territory. For operational details, see the section on military orders and movement.</li>
+				<li><strong>Mountains</strong>: Mountains provide a defensive bonus (see the bonus list in the combat section)</li>
+				<li><strong>Rivers</strong>: Rivers provide a directional defensive bonus that applies against an army attacking over the river.</li>
+				<li><strong>Shoreline</strong>: Shoreline provides a directional defensive bonus against a landing army.</li>
+				<li><strong>Canals</strong>: Canals provide a defensive bonus and act as a "ship railroad", allowing ships to pass through two bodies of water. As long as the player possesses (or obtains permission from the owner of) the canal, the player may pass ships through the canal.</li>
+			</ul>
+			<p>
+				The territory modifiers work together and generate what I view as the appropriate "defense-offense" balance.
+			</p>
+			<p>
+				The attacker has the advantage of choosing the time, place, has the advantage of troop concentration. 
+			</p>
+			<p>
+				The defense has the advantage of terrain, short supply lines, and interior supply lines.
+			</p>
+			<p>
+				Each of the types of terrain modifiers will be discussed more extensively in the section of the rules which their modifications affect.
+			</p>
+			<h3 class="pad-top">
+				The Turn
+			</h3>
+			<p>
+				Each turn consists of three phases: 
+				<ol>
+					<li>One allocation phase</li>
+					<li>Three combat seasons</li>
+					<li>One reconciliation phase</li>
+				</ol>
+			</p>
+			<p>
+				During the allocation phase, players place orders for how to allocate their GDP for the next season.
+			</p>
+			<p>
+				The combat seasons involve moving units in each of the three seasons: spring, fall, and winter. Every combat season ends with a combat reconciliation phase, which occurs after all combat orders are given and units in conflict resolve their disputes.
+			</p>
+			<p>
+				In the reconciliation phase, players obtain political outcomes and receive production ordered during allocation phase.
+			</p>
+			<h4>
+				Allocation
+			</h4>
+			<p>
+				In the allocation phase, players take their total GDP and use it to purchase several different types of goods. You may not "roll-over" GDP into the future: productive capacity not used is lost.
+			</p>
+			<p>
+				Additionally, you may not buy, sell, or trade GDP. 
+			</p>
+
+
+
+
+
+
+
+		</div>
+
+
+
+
+
+
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>
