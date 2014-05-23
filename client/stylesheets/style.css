@@ -28,6 +28,10 @@ table.large {
         max-width: 600px;
     }
 
+table.medium {
+        max-width: 450px;
+    }
+
 table {
 
 }
