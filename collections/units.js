@@ -22,3 +22,7 @@ Units = new Meteor.Collection("landUnits", {
         },
     }
 });
+
+// Template.battle.helpers({
+//     unitType: landUnits
+// });
